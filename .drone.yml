@@ -1,0 +1,8 @@
+publish:
+  docker:
+#    storage_driver: vfs
+    repo: spacecowboy/hugo
+    tag: ["latest", "0.15"]
+#    when:
+#      branch: master
+#      event: push
