@@ -1,0 +1,11 @@
+## How to build
+
+```
+docker build -t spacecowboy/hugo .
+```
+
+## How to run
+
+```
+docker run --rm --name="hugo" -v /path/to/blog/:/data spacecowboy/hugo
+```
