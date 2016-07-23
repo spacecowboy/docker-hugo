@@ -1,10 +1,7 @@
-publish:
-  docker:
-#    storage_driver: vfs
-    repo: spacecowboy/hugo
-    tag: ["latest", "0.15"]
-    username: "$$DOCKERHUB_USERNAME"
-    password: "$$DOCKERHUB_PASSWORD"
-    when:
-      branch: master
-      event: push
+pipeline:
+  publish:
+    docker:
+      repo: spacecowboy/hugo
+      tag: ["latest", "0.15"]
+      when:
+        branch: master
